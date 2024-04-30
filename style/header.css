@@ -1,8 +1,40 @@
-/* Sidebar  changing smt*/
+:root {
+  --primary-color: #fff;
+  --background-color-: #224864;
+  --section-one-justify-content: center;
+  --section-one-height-blocks: 15vh;
+  --section-one-width-blocks: auto;
+  --section-one-font-size-h1: 5vh;
+  --section-one-font-size-h6: 5vh;
+  --text-aligh-h1-h6: start;
+  --aligh-bottom: center;
+  --aligh-bottom-justify-content: baseline;
+  --height-bottom-enter: 10vh;
+  --widht-bottom-enter: 20rem;
+  --height-img-logo: 10vh;
+  --margin-top-button-cadastro: 1rem;
+  --input-date-width: 30vw;
+  --input-height: 4vh;
+  --input-width: 25vw;
+  --font-size-placeholder: 2vh;
+  --width-button-cadastro: 30rem;
+  --border-width-buttons: 0.5rem;
+  --font-size-buttons: 3vh;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100vw;
+  font-family: 'Inter', sans-serif;
+}
+
 .sidebar {
   position: fixed;
   width: 230px;
-  height: 100%;
+  height: 100% !important;
   left: 0;
   background-color: #ffffff;
   /* Use your background color variable */
@@ -34,11 +66,9 @@
   margin-top: auto;
 }
 
-
 .sidebar ul li {
   display: block;
 }
-
 
 .sidebar ul li a {
   display: flex;
@@ -58,7 +88,6 @@
   top: 269px;
   left: 48px;
   gap: 17px;
-
 }
 
 .sidebar ul li a:hover,
@@ -67,8 +96,6 @@
   background: linear-gradient(90deg, #224564 0%, #FAFAFF 100%);
   border-radius: 21px 0px 0px 21px;
 }
-
-/* Ensure your media queries and other CSS follow here */
 
 .sidebar .bottom-section {
   position: absolute;
@@ -105,7 +132,6 @@
   font-weight: 700;
   color: #224864;
   font-size: 13px;
-
 }
 
 .sidebar .bottom-section #second {
@@ -152,6 +178,7 @@ div.buttons-container {
   /* Alinha horizontalmente ao centro */
 }
 
+
 .buttons-container button:hover {
   background-color: rgba(34, 72, 100, 0.6);
   /* Cor ao passar o mouse */
@@ -170,4 +197,35 @@ div.buttons-container {
   color: #AEBAC1;
   text-align: center;
   line-height: normal !important;
+}
+
+
+h1 {
+  margin-top: 67px;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: left;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Assegura que o html e body ocupem a altura toda */
+  box-sizing: border-box;
+}
+
+header,
+.content {
+  width: calc(100% - 310px);
+  /* Calcula a largura excluindo a sidebar */
+  float: right;
+  /* Garante que o conteúdo flutue à direita da sidebar */
+}
+
+h2 {
+  color: #224864;
 }
